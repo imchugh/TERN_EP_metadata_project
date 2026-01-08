@@ -95,13 +95,13 @@
             "No dry season / warm summer (Cfb)"
             ],
         "Tower type": [
-            "Free standing tower", 
-            "Guyed mast", 
-            "Tripod", 
+            "Free standing tower",
+            "Guyed mast",
+            "Tripod",
             "Hinged mast",
             "Pipe mast",
             "Other"
             ]
         }
-        
+
 }
