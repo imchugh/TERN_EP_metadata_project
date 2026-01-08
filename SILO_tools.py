@@ -29,6 +29,8 @@ API_URL = 'https://www.longpaddock.qld.gov.au/cgi-bin/silo'
 USER = 'imchugh@unimelb.edu.au'
 PASS = 'apirequest'
 VAR_CODES = 'RXN'
+DEFAULT_START_DATE = '20000101'
+DEFAULT_END_DATE = '20241231'
 DATE_FORMAT = '%Y%m%d'
 
 ###############################################################################
@@ -46,8 +48,11 @@ class SILODataAnalyser():
     # --------------------------------------------------------------------------
     def __init__(
             self,
-            latitude: int | float, longitude: int | float, start_date: str,
-            finish_date: str, var_codes: str = VAR_CODES
+            latitude: int | float, 
+            longitude: int | float, 
+            start_date: str=DEFAULT_START_DATE,
+            finish_date: str=DEFAULT_END_DATE, 
+            var_codes: str = VAR_CODES
     ) -> None:
         """
         Get location and dates, request and format data.
