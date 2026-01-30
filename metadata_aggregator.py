@@ -112,13 +112,13 @@ def aggregate_mod_time():
 # -----------------------------------------------------------------------------
 
 
-def write_aggregated_sheet():
+def write_aggregated_sheet(file_name: str='aggregated_site_metadata') -> None:
 
     df = aggregate_sheets()
     df = df.reset_index()
-
+        
     sheet_id = gsac.create_sheet(
-        file_name='aggregated_site_metadata',
+        file_name=file_name,
         folder_id=OUTPUT_FOLDER_ID
         )
 

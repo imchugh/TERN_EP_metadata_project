@@ -29,7 +29,7 @@ from googleapiclient.discovery import build
 ### BEGIN INITS ###
 ###############################################################################
 
-AUTH_DIR = '/home/unimelb.edu.au/imchugh/Documents/secrets'
+AUTH_DIR = os.getenv('GSHEETS_CREDS_DIR')
 CLIENT_SECRET_FILE = 'client_secret.json'
 TOKEN_FILE = "token.json"
 SCOPES = [
